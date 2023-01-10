@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <script type="text/javascript"  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">  emailjs.init('b4l6Hb4lo_uN-V3bB')</script>
+    <script src="sweetalert2.all.min.js"></script>
+    <title>Enzo CV</title>
+</head>
+<body>
+
+        <div class="wrapper"> 
+              
+            <header>
+
+                <!--Navigation bar-->
+                
+                <div class="navbar" id="navBar">
+                    <div>
+                        <string><a href="#Main"><img class="icon" src="img/logo2.png" alt="Enzo Web Developer icon"></a></string>   
+                    </div>
+                        <div class="hamburger-menu-container" id="hamburgerBackground"></div>   
+                            <ul class="menu" id="menuSlide">
+                                <li><string><a href="#" class="nav-options option-hide" id="navElement">Home</a></string></li>
+                                <li><a href="#aboutMe" class="nav-options" id="navElement">About Me</a></li>
+                                <li><a href="#formacion-div" class="nav-options" id="navElement">Formación</a></li>
+                                <li><a href="#skills" class="nav-options" id="navElement">Skills</a></li>
+                                <li><a href="#contact" class="nav-options" id="navElement">Contacto</a></li>
+                            </ul>
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                      </button>
+                      
+                      <div class="burger-menu" id="burgerMenu">
+                        <div class="uno"></div>
+                        <div class="dos"></div>
+                        <div class="tres"></div>
+                      </div>
+                </div>
+                </nav>
+            </header>
+
+            <!--Profile Pic, Name, Seniority, CV and contact links-->
+
+            <div class="main" id="Main">
+                <img class="img-main" src="img/Profile.png" alt="Enzo Plando Web Developer">
+                <div class="info-content">
+                    <h1 class="name">Enzo Plando</h1>
+                    <p class="frontend-dev-text">Frontend dev</p>
+                    <a href="/files/cv.pdf" download="Curriculum Vitae" >
+                        <button class="download-cv">Download CV</button>
+                    </a>
+                </div>
+            
+            </div>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/enzofernandoplando/" target="_blank"><img src="img/linkedin.png" alt="Enzo's linkedin" class="LinkedIn" id="aboutMe"></a>
+                    <a href="https://github.com/navinoob99" target="_blank"><img src="img/Git.gif" alt="Enzo's GitHub" class="Git"></a>
+                </div>
+        </div>
+
+        <!--About me section-->
+        <div class="about">
+            <img src="img/background3.png" class="about-img">
+
+        <div class="about-info">
+            <h2>About Me</h2>
+            <div class="divider"></div>
+            <p class="about-description">
+                Soy un desarrollador frontend y me describo como pasional en el ambito del 
+                desarrollo web ya que realmente me gusta y me disfuto lo que hago.
+                Estudio de forma autodidacta, me encanta aprender y estar capacitandome constantemente.
+            </p>
+            <h2>Soft Skills</h2>
+            <div class="divider"></div>
+            <div class="soft">
+            <button class="soft-skill">#Comprensión</button>
+            <button class="soft-skill">#Asertividad</button>
+            <button class="soft-skill">#Comunicación</button>
+            <button class="soft-skill">#Escucha Activa</button>
+            <button class="soft-skill">#Resolución de problemas</button>
+            <button class="soft-skill" id="proactivo">#Proactivo</button>
+            </div>
+        </div>
+        </div>
+        <div class="formacion_div" id="formacion-div"></div><!--this helps redirect to formacion section DO NOT TOUCH-->
+        
+    
+        <!--Formacion, Idiomas and Que puedo hacer? Section-->
+
+         <!--Formación-->
+        
+        <div class="formacion" id="Formacion">
+            <h2 class="formacion-h2">Formación</h2>
+            
+        <div class="container-1">
+            <div>
+                <img class="coder-logo" src="/img/coderhouse-logo.png" alt="CoderHouse logo">
+                <h4>Javascript web Development</h4>
+                <p>CoderHouse</p>
+                <span>05/2022 - 08/2022</span>
+            </div>
+
+            
+            <div>
+                <img class="logo-fcc-1" src="/img/fcc.png" alt="Free Code Camp">
+                <h4>Responsive Web Design</h4>
+                <p>Free Code Camp</p>
+                <span>05/2022 - 09/2022</span>
+            </div>
+            
+            <div>            
+                <img class="logo-fcc-1" src="/img/fcc.png" alt="Free Code Camp">
+                <h4>Frontend Development Libraries</h4>
+                <p>Free Code Camp</p>
+                <span>09/2022 - Cursando</span>
+            </div>
+        </div>
+            <!--Idiomas-->
+        <h2 class="idiomas">Idiomas</h2> 
+        <div class="container-2">
+            <div class="spanish">
+                <h4>Español</h4>
+                <span>Competencia Nativa</span>
+            </div>
+            <div class="english">
+                <h4>Inglés</h4>
+                <span>Competencia Laboral</span>
+            </div>
+        </div>
+            <!--¿Que puedo hacer?-->
+
+           <h2 class="que-hacer-h2">¿Que puedo hacer?</h2>
+            <div class="que-hacer">
+            <ul>
+                <li class="capacidad"><p>Actualmente soy capaz de codificar páginas web
+                    desde cero usando HTML, CSS, y JavaScript.</p>
+                </li>
+                <li class="capacidad"><p>Diseño y concepto de paginas web con Figma</p></li>
+                <li class="capacidad"><p>Comprensión fundamental de los conceptos 
+                    básicos de diseño movil / mobile first</p>
+                </li>
+                <li class="capacidad"><p>API implementation and Search Engine Optimization (SEO)</p></li>
+            </ul>
+            <img class="dev-image" src="/img/7118756_3426526.jpg" alt="Enzo programando">
+            </div>
+            <br id="skills">
+        </div>
+       
+        <!--Skills section-->
+
+        <div class="skills" id="Skills">
+            
+                <div class="skills-text">
+                <h2>Skills</h2>
+                <div class="divider"></div>
+                <p>Estas son las tecnologias y herramientas con las que me siento mas comodo al trabajar</p>
+                </div>
+
+
+                <div class="tecnologias">
+                <div class="round">
+                    <img class="skill-img" src="/img-black/html.png" alt="HTML 5">
+                </div>
+                <div class="round">
+                    <img class="skill-img" src="/img-black/css.png" alt="CSS">
+                </div>
+                <div class="round">
+                    <img class="skill-img" src="/img-black/bootstrap.png" alt="Bootstrap">
+                </div>
+                <div class="round">
+                    <img class="skill-img" src="/img-black/javascript.png" alt="JavaScript">
+                </div>
+                <div class="round">
+                    <img class="skill-img" id="figma-img" src="/img-black/figma.png" alt="Figma">
+                </div>
+                <div class="round">
+                    <img class="skill-img" src="/img-black/illustrator.png" alt="Adobe Illustrator">
+                </div>
+                <div class="round">
+                    <img class="skill-img" id="reactIcon"src="/img-black/react.png" alt="React JS">
+                </div>
+                <div class="round">
+                    <img class="skill-img" src="/img-black/github.png" alt="GitHub">
+                </div>
+                </div>    
+                
+        </div><span id="contact"></span>
+
+        <div class="contact-section" id="cntact">
+            <div class="contact-container">
+                <div class="contact-head">
+                    <h2>Keep In Touch!</h2>
+                </div>
+
+                <form class="contact-form" id="form">
+                    <input type="text" name="form_name" id="from_name" placeholder="Nombre" class="contactar-datos-name" autocomplete="off"/>
+                    <input type="email" placeholder="Email" id="email_id" name="email_id" class="contactar-datos-email" autocomplete="off"/>
+                    <p class="email-error">Ingresá un email valido!</p>
+                    <textarea name="message" id="message" cols="30" rows="8" placeholder="Deja tu mensaje aqui"></textarea>
+                    <input type="submit" id="button" value="Contactar!" class="contactar-input"/>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+            <div class="footer-icons">
+                <div class="footer-align">
+                    <a href="https://www.linkedin.com/in/enzofernandoplando/" target="_blank"><img src="/img/linkedin_footer.png" alt="Enzo's Linkedin" id="image_footer"></a>
+                    <label for="linkedinFooter">Linkedin</label>
+                </div>
+                <div class="footer-align">
+                    <a href="https://goo.gl/maps/GWa9LQjXAKXPdXav8" target="_blank"><img src="/img/location_footer.png" alt="Enzo's Location" id="locationFooter"></a>
+                    <label for="locationFooter">Ituzaingo, Argentina</label>
+                </div>
+                <div class="footer-align">
+                    <a href="#" target="_blank"><img src="/img/mail_footer.png" alt="Enzo's Email" id="emailFooter"></a>
+                    <label for="">enzoplando2@gmail.com</label>
+                </div>
+                <div class="footer-align">
+                    
+                    <a href="https://github.com/navinoob99" target="_blank"><img src="/img/github_footer.png" alt="Enzo's Github" id="githubFooter"></a>
+                    <label for="githubFooter">github.com/navinoob99</label>
+                </div>
+
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-data">
+                <p>©Enzo Plando CV Page</p>
+                <br>
+                <p>¡No dudes en dejarme alguna sugerencia o comentario!</p>
+            </div>
+            </div>
+                </body>
+                    
+                <script src="/script.js"></script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .conteiner{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+       grid-template-areas: 
+       "header" "header"
+       "cont-general" "cont-general"
+       "footer" "footer"; 
+    }
+    
+    .header {
+        grid-area: "header";
+    }
+
+    .cont-general{
+        grid-area: "cont-general";
+    }
+
+    .footer {
+        grid-area: "footer";
+        back
+    }
+</style>
+
+<body>
+    <div class="contenedor">
+        <div class="header">asda|</div>
+        <div class="cont-general">12312</div>
+        <div class="footer">123123</div>
+    </div>
+</body>
+</html>
