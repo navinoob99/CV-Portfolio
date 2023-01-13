@@ -951,8 +951,14 @@ footer label{
     .contact-form{
         width: 70vw;
         margin: auto auto;
+        flex-direction: row;
     }
 
+    .email-sent-toggle{
+        width: 100vw;
+        margin: auto auto;
+        align-items: center;
+    }
     /*Footer*/
 
     footer label{
