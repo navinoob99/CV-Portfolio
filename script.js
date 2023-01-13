@@ -27,6 +27,8 @@ function toggleMenu(){
 //Mail
 const btn = document.getElementById('button');
 let emailSent = document.getElementById('button');
+let emailToggle = document.getElementById('emailSentToggle');
+let formToggleHide = document.getElementById('formToggle');
 let email = document.getElementById('email_id');
 let regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -50,8 +52,11 @@ document.getElementById('form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Enviado!';
-      emailSent.classList.remove('contactar-input')
+      emailSent.classList.remove('contactar-input');
       emailSent.classList.add('contactar-success');
+      emailToggle.classList.add('email-sent-toggle');
+      emailToggle.classList.remove('email-sent')
+      formToggleHide.classList.add('form-toggle-hide');
     }, (err) => {
       btn.value = 'Contactar!';
       alert(JSON.stringify(err));

@@ -503,6 +503,15 @@ body{
     color: var(--text-color);
 }
 
+.form-toggle{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-toggle-hide{
+    display: none;
+}
+
 .contact-form{
     display: flex;
     width: 25vw;
@@ -510,6 +519,38 @@ body{
     justify-content: center;
     text-align: center;
 }
+
+.email-sent{
+    display: none;
+}
+
+.email-sent-toggle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30vw;
+    margin: auto auto;
+    color: var(--main-bg-color);
+}
+
+
+
+.email-sent-toggle h1{
+    margin: 20px auto;
+    font-size: 2.5em;
+}
+
+.email-sent-toggle img{
+    width: 60px;
+}
+
+.email-sent-toggle p{
+    margin: 10px auto;
+    font-size: 17px;
+    font-weight: 200;
+}
+
+
 
 .contactar-datos-name, .contactar-datos-email{
     padding: 10px 20px;

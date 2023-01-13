@@ -193,25 +193,26 @@
         </div><span id="contact"></span>
 
         <div class="contact-section" id="contact">
-            <div class="mail-sent">
-                <h1>¡Email enviado!</h1>
-                <img src="/img/checked.png" alt="Email Sent">
-                <p>¡Gracias por contactarte conmigo!</p>
-                <p>Reviso constantemente mi bandeja de mails para poder contestar lo mas rapido posible</p>
-            </div>
             <div class="contact-container">
                 <div class="contact-head">
                     <h2>Keep In Touch!</h2>
                 </div>
-                <div class="form-container">
-                    <form class="contact-form" id="form">
-                    <input type="text" name="form_name" id="from_name" placeholder="Nombre" class="contactar-datos-name" autocomplete="off"/>
+                <form class="contact-form" id="form">
+                    <div class="email-sent" id="emailSentToggle">
+                        <h1>¡Email enviado!</h1>
+                        <img src="/img/checked.png" alt="Email Sent">
+                        <p>¡Gracias por contactarte conmigo!</p>
+                        <p>Reviso constantemente mi bandeja de mails para poder contestar lo mas rapido posible</p>
+                    </div>
+                    
+                    <div class="form-toggle" id="formToggle">
+                        <input type="text" name="form_name" id="from_name" placeholder="Nombre" class="contactar-datos-name" autocomplete="off"/>
                         <input type="email" placeholder="Email" id="email_id" name="email_id" class="contactar-datos-email" autocomplete="off"/>
                         <p class="email-error">Ingresá un email valido!</p>
                         <textarea name="message" id="message" cols="30" rows="8" placeholder="Deja tu mensaje aqui"></textarea>
                         <input type="submit" id="button" value="Contactar!" class="contactar-input"/>
+                    </div>
                     </form>
-                </div>
             </div>
         </div>
 
